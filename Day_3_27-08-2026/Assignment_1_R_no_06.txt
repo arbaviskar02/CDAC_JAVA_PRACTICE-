@@ -1,0 +1,96 @@
+/*  Roll No 6:
+ *  Q.1  Write a program which implement the bank
+ * FD Formula
+ * si=p*r*n/100
+ * amount=p+si;
+ * *
+ */
+import java.util.*;
+public class Bank {
+
+	public static void main(String[] args) {
+	 int p;
+	 float r;
+	 int n;
+	 float si;
+	 int total;
+	 System.out.println("This is Bank Program...! ");
+
+	 System.out.println("ENTER THE VALUES FOR p,r,n : ");
+	 Scanner object = new Scanner(System.in);
+	 p =object.nextInt();
+	 r = object.nextFloat();
+	 n = object.nextInt();
+	 si=(int)(p*r*n/100);
+	 total = (int)(p +si);
+	 System.out.println("THE si is : "+si);
+	 System.out.println("THE Total Amount is : "+total);
+	 }
+
+}
+
+/*
+ * Q.2  Write a program read value from user
+ * productname rate of product quantity
+ * and calculate amount
+ * assign discount 10% on amount
+ * caclualte net amount
+ *
+ */
+import java.util.*;
+public class Sales {
+
+	public static void main(String[] args) {
+		String productname = null;
+		float rate;
+		int quantity;
+		double amount;
+		float discount;
+		System.out.println("its program for Sales : ");
+		Scanner object = new Scanner(System.in);
+		System.out.println("Enter Product Name : ");
+		productname = object.next();
+		System.out.println("Product Name Is : "+productname);
+		System.out.println("Enter The value for Rate : ");
+		rate = object.nextFloat();
+		System.out.println("The value for Rate Is : "+ rate);
+		System.out.println("Enter The value for Quantity : ");
+		quantity = object.nextInt();
+		System.out.println("The value for Quantity Is : "+ quantity);
+	}
+
+}
+
+//Q.3   Write A program to calculate area of triangle,rectangle.
+import java.util.*;
+public class Areaoftriangle {
+
+	public static void main(String[] args) {
+		int choice;
+		double base,height,length,width;
+		System.out.println("\nENTER YOUR CHOICE 1. FOR AOT \n 2. FOR AOR: ");
+		Scanner object = new Scanner(System.in);
+		choice = object.nextInt();
+		switch(choice)
+		{
+		case 1:
+					System.out.println("enter Dimensions for triangle(Base and Height) : ");
+					base= object.nextDouble();
+					height= object.nextDouble();
+					double aot = (double)(0.5*(base*height));
+					System.out.println("The Area of Triangle is : " + aot);
+					break;
+		case 2:
+			System.out.println("enter Dimensions for Rectangle(Length and Width) : ");
+			length= object.nextDouble();
+			width= object.nextDouble();
+			double aor = (double)(length*width);
+			System.out.println("The Area of Rectangle is : " + aor);
+			break;
+					
+				
+	}
+
+}
+}
+
